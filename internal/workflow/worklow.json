@@ -1,0 +1,27 @@
+{
+    "id": "uuidv4",
+    "name": "flow name",
+    "description": "flow description",
+    "steps": [
+        {
+            "id": "uuidv4",
+            "type": "job | flow",
+            "name": "step name",
+            "image": "dockerimage.registry",
+            "command": "cmd",
+            "args": [
+                "arg1",
+                "arg2"
+            ],
+            "timeout": 60,
+            "retry": {
+                "attempts": 3,
+                "delay": 5
+            },
+            "environment": {
+                "VAR1": "value1",
+                "VAR2": "value2"
+            }
+        }
+    ]
+}
